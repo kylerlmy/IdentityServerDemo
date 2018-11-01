@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using mvcCookieAuthSample.Services;
 
 namespace mvcCookieAuthSample
 {
@@ -36,6 +37,8 @@ namespace mvcCookieAuthSample
                 .AddInMemoryApiResources(Config.GetApiResources())
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddTestUsers(Config.GetTestUsers());
+
+            services.AddScoped<ConsentService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
