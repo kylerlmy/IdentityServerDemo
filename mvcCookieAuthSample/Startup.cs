@@ -12,6 +12,9 @@ using mvcCookieAuthSample.Services;
 
 namespace mvcCookieAuthSample
 {
+    /// <summary>
+    /// 授权码模式服务端实现
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)

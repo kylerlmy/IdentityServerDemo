@@ -13,6 +13,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace IdentityServer4Sample {
+
+    /// <summary>
+    /// 客户端模式和密码模式服务端实现
+    /// </summary>
     public class Startup {
         public Startup (IConfiguration configuration) {
             Configuration = configuration;

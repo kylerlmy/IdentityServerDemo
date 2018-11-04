@@ -13,6 +13,9 @@ using Microsoft.AspNetCore.Authentication;
 
 namespace MVCAuthClient
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)

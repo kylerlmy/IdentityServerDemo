@@ -24,7 +24,7 @@ namespace MvcAuth
             return new List<Client> {
                 new Client () {
                     ClientId = "mvc",
-                        AllowedGrantTypes = GrantTypes.Implicit,
+                        AllowedGrantTypes = GrantTypes.Implicit,//简化模式
                         ClientSecrets = { new Secret ("secret".Sha256 ()) },
 
                         RequireConsent=false,

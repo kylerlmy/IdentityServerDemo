@@ -19,6 +19,9 @@ using IdentityServer4;
 
 namespace MvcAuth
 {
+    /// <summary>
+    /// 简化模式服务端
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)

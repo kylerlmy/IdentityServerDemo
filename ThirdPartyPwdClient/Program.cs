@@ -3,6 +3,9 @@ using System.Net.Http;
 using IdentityModel.Client;
 namespace ThirdPartyPwdClient
 {
+    /// <summary>
+    /// 客户端模式对应控制台的客户端[IdentityServer4Sample作为服务端]
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -27,7 +30,7 @@ namespace ThirdPartyPwdClient
             }
 
             var httpClient = new HttpClient ();
-            httpClient.SetBearerToken(tokenResponse.AccessToken);
+            httpClient.SetBearerToken(tokenResponse.AccessToken);//设置Http Head 中 authorization 对应的值
             
             var response=httpClient.GetAsync("http://localhost:5001/api/values").Result;
 

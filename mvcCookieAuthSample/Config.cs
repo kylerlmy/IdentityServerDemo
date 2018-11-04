@@ -36,6 +36,8 @@ namespace mvcCookieAuthSample
                     //RequireClientSecret=false,//设置为false后，就不要在请求体中再添加 clent_secret
                     //AllowedScopes = { "api1" }
 
+
+                    //Scopes代表您想要保护的客户端希望访问的内容
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.Profile,
